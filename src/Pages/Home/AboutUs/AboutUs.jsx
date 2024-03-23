@@ -20,7 +20,7 @@ const AboutUs = () => {
 
        
             <div className="space-y-4 w-full pl-5">
-                <p className="text-xl font-medium text-[#FF3811] mt-4">About Us</p>
+                <p className="text-xl font-medium text-[#FF3811] mt-4 text-[#FF3811] font-bold text-2xl">About Us</p>
                 <h1 className="w-96 font-bold text-5xl">We are qualified & of experience in this field</h1>
                 <p className="font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                 <p className="font-medium">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
