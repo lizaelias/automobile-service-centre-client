@@ -1,3 +1,4 @@
+import Footer from "../../../Sheard/Footer/Footer";
 import Navbar from "../../../Sheard/Navbar/Navbar";
 import AboutUs from "../AboutUs/AboutUs";
 import Banner from "../Banner/Banner";
@@ -6,6 +7,7 @@ import CoreFeatures from "../CoreFeatures/CoreFeatures";
 import PopularProducts from "../PopularProducts/PopularProducts";
 import Service from "../Service/Service";
 import Team from "../Team/Team";
+import Testimonial from "../Testimonial/Testimonial";
 
 
 
@@ -36,6 +38,12 @@ const Home = () => {
              </div>
              <div className="mt-10 mb-10">
               <CoreFeatures></CoreFeatures>
+             </div>
+             <div className="mt-10 mb-10">
+              <Testimonial></Testimonial>
+             </div>
+             <div className="mt-10 mb-10">
+              <Footer></Footer>
              </div>
         </div>
     );

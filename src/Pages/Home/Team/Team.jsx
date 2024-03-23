@@ -11,7 +11,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Team = () => {
     return (
-        <div>
+        <div className='p-3 md:p-0 lg:p-0'>
 
           <div className="text-center space-y-4">
                 <p className="text-[#FF3811] font-bold text-2xl">Teams</p>
