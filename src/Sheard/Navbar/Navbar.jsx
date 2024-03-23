@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../public/assets/icons/auto.png"
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
 
 
 
 const Navbar = () => {
-
+ 
+   const {user} =useContext(AuthContext);
 
     const navbar =<>
 
@@ -41,7 +44,12 @@ const Navbar = () => {
                        </ul>
                      </div>
                      <div className="navbar-end">
+                        {
+                          user && <p className="text-blue-900 text-xl font-bold mr-5">{user.email}</p>
+                          
+                        }
 
+                    
                        <button className="btn btn-outline btn-secondary">Appointment</button>
                        
                      </div>

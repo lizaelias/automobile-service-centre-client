@@ -1,14 +1,23 @@
 import { FaGoogle } from "react-icons/fa";
 import Navbar from "../../Sheard/Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import login from '../../../public/assets/images/login/login.svg'
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
+
 
 
 
 
 
 const Login = () => {
+
+    const {signIn,googleSignIn} =useContext(AuthContext);
+    const [success, setSuccess] =useState('');
+    const [loginError, setLoginError] =useState('');
+    const navigate =useNavigate();
       
      const handleLogin = e =>{
         e.preventDefault();
@@ -19,7 +28,51 @@ const Login = () => {
             email,
             password
         }
-        console.log(user)
+        console.log(user);
+        
+        e.target.reset();
+
+        setSuccess('');
+        setLoginError('');
+        navigate('/');
+
+        // sign in
+       signIn(email,password)
+        .then(result =>{
+            console.log(result.user)
+            setSuccess('Your Accout login succesfully')
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "Your Accout login succesfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        })
+        .catch(error =>{
+            console.error(error)
+            setLoginError('Your accout login error');
+           
+           Swal.fire({
+             icon: "error",
+             title: "Oops...",
+             text: "Your accout login Something went wrong!",
+             footer: '<a href="#">Why do I have this issue?</a>'
+            });
+
+        })
+
+     }
+
+     const handleGoogleSignIn =()=>{
+        googleSignIn()
+        .then(result =>{
+            console.log(result.user)
+            navigate('/');
+        })
+        .catch(error =>{
+            console.log(error)
+        })
      }
 
      
@@ -52,9 +105,16 @@ const Login = () => {
                    
                            </form>
                             <h1 className="mt-4 text-xl font-bold text-center">Or Sign In with</h1>
-                            <button class="btn btn-outline btn-secondary w-full mt-4"><FaGoogle></FaGoogle> Google SignIn</button> 
+                            <button onClick={handleGoogleSignIn} class="btn btn-outline btn-secondary w-full mt-4"><FaGoogle></FaGoogle> Google SignIn</button> 
 
                             <Link className="text-center" to='/register'><h1 className="mt-4">Have an account? <span className="text-[#FF3811] font-bold underline">Sign In</span></h1> </Link>
+
+                            {
+                                success && <p className="text-xl font-bold text-green-900 mt-4 text-center">{success}</p>
+                            }
+                            {
+                                loginError &&  <p className="text-xl font-bold text-red-900 mt-4 text-center">{loginError}</p>
+                            }
                     </div>                  
                                     
              </div>
