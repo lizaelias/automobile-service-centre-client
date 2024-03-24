@@ -15,7 +15,7 @@ const Banner = () => {
                           
                           className="w-full"  />
 
-                            <div className="absolute  left-0  right-0 h-full top-0  space-y-6 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] ">
+                            <div className="absolute  left-0  right-0 h-full top-0  space-y-6 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
                             <div className='w-96 absolute left-12 top-1/4 right-0 bottom-0 space-y-6'>
                             <h1 className='text-white text-6xl font-bold'>Affordable Price For Car Servicing</h1>
                              <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
