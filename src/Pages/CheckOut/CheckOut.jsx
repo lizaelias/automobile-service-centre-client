@@ -4,6 +4,7 @@ import checoutImages from '../../../public/assets/images/checkout/checkout.png'
 import Navbar from "../../Sheard/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const CheckOut = () => {
   const services = useLoaderData();
