@@ -3,18 +3,17 @@
 
 
 
-const TableRow = ({book}) => {
+const TableRow = ({book,handleDelete}) => {
 
-    const{coustomerName,date,email,service_id,services,img}= book;
+    const{_id,coustomerName,date,email,service_id,services,img}= book;
+    
 
     console.log(book)
     return (
        
        <tr>
         <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
+        <button onClick={()=>handleDelete(_id)} className="btn btn-outline btn-secondary">Delete</button>
         </th>
         <td>
         <div class="avatar">
