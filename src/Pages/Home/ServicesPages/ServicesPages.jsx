@@ -14,7 +14,7 @@ const ServicesPages = () => {
         <div className="max-w-7xl mx-auto p-2 mb-10">
             <Navbar></Navbar>
              
-            <div className="relative mt-10 z-0">
+            <div className="relative mt-10 z-0" data-aos="fade-down-left">
              <img className="w-full" src={checoutImages} alt="" />
               <div className="absolute left-0  right-0 top-0 h-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
                 <div className="absolute left-12 right-0 top-[40%]">
@@ -34,30 +34,30 @@ const ServicesPages = () => {
          {/* grid section */}
              <div className="grid grid-cols-3 gap-10 mt-24">
                 <div className="col-span-2 space-y-4">
-                     <img className="h-[400px] w-full" src={Serviceimages } alt="" />
+                     <img className="h-[400px] w-full" src={Serviceimages } alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" />
                      <h1 className="mt-10 text-3xl font-bold">Unique Car Engine Service</h1>
                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
                     
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500" >
                         <div className="p-10 border-t-4 border-[#FF3811] bg-slate-100 rounded-lg">
                          <h1 className="text-2xl font-bold">Instant Car Services</h1>
                          <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
                         </div>
-                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg">
+                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg"  data-aos="flip-left">
                          <h1 className="text-2xl font-bold">24/7 Quality Service</h1>
                          <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
                         </div>
-                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg">
+                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                          <h1 className="text-2xl font-bold">Easy Customer Service</h1>
                          <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
                         </div>
-                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg">
+                        <div className="p-10 bg-slate-100 border-t-4 border-[#FF3811] rounded-lg"  data-aos="flip-left">
                          <h1 className="text-2xl font-bold">Quality Cost Service</h1>
                          <p>It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
                         </div>
                         
                    </div>
-                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                   <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
                  
                   {/* 3 Simple Steps to Process */}
                     <div>
@@ -66,7 +66,7 @@ const ServicesPages = () => {
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
                      
                      {/* grid three */}
-                    <div className="grid grid-cols-3 gap-3 mt-10">
+                    <div className="grid grid-cols-3 gap-3 mt-10" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                    
                         <div className="card border p-7 ">
                         <figure>
@@ -129,13 +129,13 @@ const ServicesPages = () => {
                 <div className="col-span-1">
                     <div className="bg-slate-100 p-5 rounded-xl space-y-4">
                       <h1 className="text-2xl font-bold">Services</h1>
-                      <button className="btn btn-outline btn-secondary w-full">Full Car Repair <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
+                      <button className="btn btn-outline btn-secondary w-full" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Full Car Repair <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
 
-                      <button className="btn btn-outline btn-secondary w-full">Engine Repair <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
+                      <button className="btn btn-outline btn-secondary w-full" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Engine Repair <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
                         
-                      <button className="btn btn-outline btn-secondary w-full">Engine Oil Change <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button> 
+                      <button className="btn btn-outline btn-secondary w-full" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Engine Oil Change <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button> 
 
-                      <button className="btn btn-outline btn-secondary w-full">Automatic Services<span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
+                      <button className="btn btn-outline btn-secondary w-full" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Automatic Services<span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button>
                         
                       <button className="btn btn-outline btn-secondary w-full">Battery Charge <span><FaArrowAltCircleRight></FaArrowAltCircleRight></span></button> 
                     </div>

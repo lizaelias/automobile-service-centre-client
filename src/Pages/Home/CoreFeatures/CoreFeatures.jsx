@@ -16,9 +16,9 @@ const CoreFeatures = () => {
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
             </div>
              
-             <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-10 mb-10 items-center'>
+             <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-10 mb-10 items-center' data-aos="flip-down">
 
-             <div className="card border p-7 ">
+             <div className="card border p-7">
                           <figure>
                           <img src={futures1} alt="Shoes" className="rounded-xl pt-4" />
                           </figure>

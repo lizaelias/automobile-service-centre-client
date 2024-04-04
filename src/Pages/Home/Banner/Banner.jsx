@@ -10,13 +10,13 @@ const Banner = () => {
         <div>
             
              <div className="carousel w-full mt-2 mb-10">
-                        <div id="slide1" className="carousel-item relative w-full h-[600px] ">
-                          <img src={one} 
+                        <div id="slide1" className="carousel-item relative w-full h-[600px]">
+                          <img src={one} data-aos="flip-left"
                           
                           className="w-full"  />
 
                             <div className="absolute  left-0  right-0 h-full top-0  space-y-6 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
-                            <div className='w-96 absolute left-12 top-1/4 right-0 bottom-0 space-y-6'>
+                            <div className='w-96 absolute left-12 top-1/4 right-0 bottom-0 space-y-6' data-aos="fade-up-right">
                             <h1 className='text-white text-6xl font-bold'>Affordable Price For Car Servicing</h1>
                              <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                              
@@ -31,7 +31,7 @@ const Banner = () => {
                        
                         </div> 
                         <div id="slide2" className="carousel-item relative w-full h-[600px]">
-                        <img src={tow} 
+                        <img src={tow} data-aos="flip-left"
                           
                           className="w-full"  />
 
@@ -50,7 +50,7 @@ const Banner = () => {
                           </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full h-[600px]">
-                        <img src={three} 
+                        <img src={three} data-aos="flip-left"
                           
                           className="w-full"  />
 
@@ -69,7 +69,7 @@ const Banner = () => {
                           </div>
                         </div>
                         <div id="slide4" className="carousel-item relative w-full h-[600px]">
-                        <img src={fors} 
+                        <img src={fors} data-aos="flip-left"
                           
                           className="w-full"  />
 

@@ -4,7 +4,7 @@ import { CiCalendarDate, CiLocationOn, CiPhone } from "react-icons/ci";
 
 const Contract = () => {
     return (
-        <div className="bg-gray-950 rounded-lg h-[250px] flex justify-around items-center p-3 md:p-10 lg:p-14">
+        <div className="bg-gray-950 rounded-lg h-[250px] flex justify-around items-center p-3 md:p-10 lg:p-14" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           
                 <div className="flex items-center gap-x-3">
                  <span className="text-[#FF3811] text-4xl"><CiCalendarDate></CiCalendarDate></span>

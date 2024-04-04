@@ -9,14 +9,14 @@
 const PopularProducts = () => {
     return (
         <div>
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-4" data-aos="fade-up" data-aos-anchor-placement="center-center">
                 <p className="text-[#FF3811] font-bold text-2xl">Popular Products</p>
                 <h1 className="text-4xl font-bold">Browse Our Products</h1>
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
             </div>
 
              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 mb-10'>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6">
                           <img src={prodect1} alt="Shoes" className="rounded-xl w-[150px]" />
                           </figure>
@@ -33,7 +33,7 @@ const PopularProducts = () => {
                             
                            </div>
                </div>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6">
                           <img src={prodect2} alt="Shoes" className="rounded-xl w-[150px]" />
                           </figure>
@@ -50,7 +50,7 @@ const PopularProducts = () => {
                             
                            </div>
                </div>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6 ">
                           <img src={prodect3} alt="Shoes" className="rounded-xl w-[150px] h-[150px]" />
                           </figure>
@@ -67,7 +67,7 @@ const PopularProducts = () => {
                             
                            </div>
                </div>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6">
                           <img src={prodect4} alt="Shoes" className="rounded-xl w-[150px]" />
                           </figure>
@@ -84,7 +84,7 @@ const PopularProducts = () => {
                             
                            </div>
                </div>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6">
                           <img src={prodect5} alt="Shoes" className="rounded-xl w-[150px]" />
                           </figure>
@@ -101,7 +101,7 @@ const PopularProducts = () => {
                             
                            </div>
                </div>
-                <div className="card border p-5 ">
+                <div className="card border p-5 "  data-aos="flip-left" data-aos-duration="2000">
                           <figure className="px-10 pt-10 bg-[#F3F3F3] p-6">
                           <img src={prodect6} alt="Shoes" className="rounded-xl w-[150px]" />
                           </figure>

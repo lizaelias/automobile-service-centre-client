@@ -9,7 +9,7 @@ const AboutUs = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="relative">
+            <div className="relative" data-aos="flip-up">
                 <img className='lg:pr-10' src={photo1} alt="" />
                 <div className='absolute  left-1/2 -bottom-14  -right-20 w-full'>
                     <img className='w-1/2 h-[250px] border-8 border-white'  src={photo2} alt="" />
@@ -19,8 +19,8 @@ const AboutUs = () => {
             </div> 
 
        
-            <div className="space-y-4 w-full pl-5">
-                <p className="text-xl font-medium text-[#FF3811] mt-4 text-[#FF3811] font-bold text-2xl">About Us</p>
+            <div className="space-y-4 w-full pl-5" data-aos="zoom-in">
+                <p className=" mt-4 text-[#FF3811] font-bold text-2xl">About Us</p>
                 <h1 className="w-96 font-bold text-5xl">We are qualified & of experience in this field</h1>
                 <p className="font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                 <p className="font-medium">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>

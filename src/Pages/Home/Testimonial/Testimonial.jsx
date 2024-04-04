@@ -6,13 +6,13 @@ const Testimonial = () => {
     return (
         <div className='p-3 md:p-0 lg:p-0'>
 
-           <div className="text-center space-y-4">
+           <div className="text-center space-y-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <p className="text-[#FF3811] font-bold text-2xl">Testimonial</p>
                 <h1 className="text-4xl font-bold">What Customer Says</h1>
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
             </div>
 
-             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-10" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                  <div className='space-y-4 p-10  border rounded-lg'>
                     <div className='flex gap-x-3 items-center'>
                         <img className='w-20 h-20 rounded-full' src={user1} alt="" />

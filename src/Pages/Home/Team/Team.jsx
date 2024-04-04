@@ -13,7 +13,7 @@ const Team = () => {
     return (
         <div className='p-3 md:p-0 lg:p-0'>
 
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4" data-aos="flip-left">
                 <p className="text-[#FF3811] font-bold text-2xl">Teams</p>
                 <h1 className="text-4xl font-bold">Meet Our Team</h1>
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
@@ -37,7 +37,7 @@ const Team = () => {
                             
                            </div>
                </div>
-            <div className="card border p-5 ">
+            <div className="card border p-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                           <figure>
                           <img src={teams2} alt="Shoes" className="rounded-xl" />
                           </figure>
@@ -54,7 +54,7 @@ const Team = () => {
                             
                            </div>
                </div>
-            <div className="card border p-5 ">
+            <div className="card border p-5" data-aos="fade-down-left">
                           <figure>
                           <img src={teams3} alt="Shoes" className="rounded-xl" />
                           </figure>

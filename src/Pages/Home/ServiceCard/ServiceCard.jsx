@@ -6,7 +6,7 @@ const ServiceCard = ({services}) => {
 
   return (
     <div>
-      <div className="card bg-base-100 border">
+      <div className="card bg-base-100 border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <figure className="px-5 pt-10">
           <img
             src={img}
