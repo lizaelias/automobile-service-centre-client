@@ -14,10 +14,10 @@ const Navbar = () => {
      <li><NavLink to='/'>Home</NavLink></li>
      <li><NavLink to='/about'>About</NavLink></li>
      <li><NavLink to='/service'>Service</NavLink></li>
-     <li><NavLink to='/blog'>Blog</NavLink></li>
+     <li><NavLink to='/register'>Register</NavLink></li>
      
      {
-      user && <li><NavLink to='/booking'>Bookings</NavLink></li>
+      user && <li><NavLink to='/booking'>MyBookings</NavLink></li>
      }
     
     </>

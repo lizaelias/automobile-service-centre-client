@@ -1,6 +1,6 @@
 import { FaGoogle } from "react-icons/fa";
 import Navbar from "../../Sheard/Navbar/Navbar";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import login from '../../../public/assets/images/login/login.svg'
 import { useContext, useState } from "react";
@@ -18,6 +18,9 @@ const Login = () => {
     const [success, setSuccess] =useState('');
     const [loginError, setLoginError] =useState('');
     const navigate =useNavigate();
+
+     const location =useLocation();
+    
       
      const handleLogin = e =>{
         e.preventDefault();
@@ -34,11 +37,12 @@ const Login = () => {
 
         setSuccess('');
         setLoginError('');
-        navigate('/');
+    
 
         // sign in
        signIn(email,password)
         .then(result =>{
+            navigate(location?.state ? location?.state :'/');
             console.log(result.user)
             setSuccess('Your Accout login succesfully')
             Swal.fire({

@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
 import TableRow from "./TableRow";
 import Swal from "sweetalert2";
+import checoutImages from '../../../public/assets/images/checkout/checkout.png'
+import Navbar from "../../Sheard/Navbar/Navbar";
 
 
 
@@ -63,9 +65,32 @@ const Booking = () => {
 
     return (
         <div className="max-w-7xl mx-auto">
+             
+
+             <div>
+                <Navbar></Navbar>
+             </div>
+             <div className="relative mt-10 mb-32 z-0">
+             <img className="w-full" src={checoutImages} alt="" />
+              <div className="absolute left-0  right-0 top-0 h-full bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+                <div className="absolute left-12 right-0 top-[40%]">
+                <h1 className="text-5xl font-bold text-white">My Booking</h1>
+                </div>
+                 
+                 
+                 
+              </div>
+              <div className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2">
+                    <h1 className='bg-[#FF3811] rounded-lg text-white text-2xl w-fit py-1 lg:py-5 px-4 lg:px-20'>Mybooking/Checkout</h1>
+
+                 </div>
+                
+           </div>
+
+             
            
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto mb-32">
                           <table className="table">
                          {/* head */}
                          <thead>

@@ -15,8 +15,10 @@ import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
     return (
+        <div>
+            
         <div className="max-w-7xl mx-auto mt-4">
-            <Navbar></Navbar>
+        <Navbar></Navbar>
 
              <Banner></Banner>
              <div className="mt-20">
@@ -42,10 +44,13 @@ const Home = () => {
              <div className="mt-10 mb-10">
               <Testimonial></Testimonial>
              </div>
-             <div className="mt-10 mb-10">
-              <Footer></Footer>
-             </div>
+             
         </div>
+        <div className="mt-10 mb-10">
+        <Footer></Footer>
+       </div>
+       </div>
+
     );
 };
 
